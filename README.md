@@ -1,16 +1,46 @@
-# popular_repositories
+## Popular GitHub Repositories App
 
-A new Flutter project.
+A simple Flutter application that allows users to browse the most popular GitHub repositories based on filters such as creation date, programming language, and result limit.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Filter repositories by:
+  - Creation date
+  - Programming language (Dart, JavaScript, Python, Java, C++, etc.)
+  - Number of results (10, 50, 100)
+- Display repository details including:
+  - Repository name
+  - Star count
+  - Programming language
+  - Creation date
+  - Owner's avatar
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project follows the MVC (Model - View - Controller) architecture:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Model**: Defines the structure of the repository data.
+- **View**: UI components built with Flutter widgets.
+- **Controller (Cubit)**: Manages state and communicates with the API services.
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Dio (HTTP client)
+- Flutter Bloc (State Management)
+- GetIt (Dependency Injection)
+- Intl (Date formatting)
+- GitHub REST API
+
+## Folder Structure
+
+- controllers  
+- core  
+- model  
+- service  
+- view  
+
+## Author
+
+Developed by **Omar Hefnawy**
